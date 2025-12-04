@@ -30,6 +30,15 @@ public class Usuario {
     public Usuario() {}
 
     // Constructor completo
+    public Usuario(Integer userId, String name, String email, String password, LocalDateTime registrationDate) {
+		super();
+		this.userId = userId;
+		this.name = name;
+		this.email = email;
+		this.password = password;
+		this.registrationDate = registrationDate;
+	}
+    
     public Usuario(Integer userId, String name, String email, String password) {
         this.userId = userId;
         this.name = name;
@@ -38,7 +47,7 @@ public class Usuario {
         this.registrationDate = LocalDateTime.now();;
     }
     
-    public Usuario( String name, String email, String password) {
+	public Usuario( String name, String email, String password) {
         this.name = name;
         this.email = email;
         this.password = password;
