@@ -42,6 +42,14 @@ public class ObjetivoAhorro {
         this.fechaLimite = fechaLimite;
         this.estado = estado;
     }
+    
+    public ObjetivoAhorro( Integer userId, String nombre, BigDecimal montoObjetivo, LocalDate fechaLimite, String estado) {
+        this.userId = userId;
+        this.nombre = nombre;
+        this.montoObjetivo = montoObjetivo;
+        this.fechaLimite = fechaLimite;
+        this.estado = estado;
+    }
 
     // Getters y Setters
     public Integer getIdObjetivo() {

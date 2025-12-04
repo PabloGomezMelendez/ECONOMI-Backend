@@ -32,7 +32,8 @@ public class Categoria {
     }
     
     public Categoria( String nombre, String tipo, String descripcion) {
-        this.nombre = nombre;
+
+    	this.nombre = nombre;
         this.tipo = tipo;
         this.descripcion = descripcion;
     }

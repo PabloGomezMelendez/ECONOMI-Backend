@@ -46,6 +46,15 @@ public class Transaccion {
         this.tipo = tipo;
         this.descripcion = descripcion;
     }
+    
+    public Transaccion( Integer idUsuario, Integer idCategoria, BigDecimal cantidad, LocalDate fecha, String tipo, String descripcion) {
+        this.idUsuario = idUsuario;
+        this.idCategoria = idCategoria;
+        this.cantidad = cantidad;
+        this.fecha = fecha;
+        this.tipo = tipo;
+        this.descripcion = descripcion;
+    }
 
     // Getters y Setters
     public Integer getIdTransaccion() {

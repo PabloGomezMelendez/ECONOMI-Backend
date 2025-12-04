@@ -42,6 +42,14 @@ public class Simulacion {
         this.resultado = resultado;
         this.fecha = fecha;
     }
+    
+    public Simulacion( Integer userId, String tipo, String parametros, BigDecimal resultado, LocalDateTime fecha) {
+        this.userId = userId;
+        this.tipo = tipo;
+        this.parametros = parametros;
+        this.resultado = resultado;
+        this.fecha = fecha;
+    }
 
     // Getters y Setters
     public Integer getIdSimulacion() {
