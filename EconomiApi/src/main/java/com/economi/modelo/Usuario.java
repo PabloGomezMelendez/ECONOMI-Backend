@@ -30,12 +30,19 @@ public class Usuario {
     public Usuario() {}
 
     // Constructor completo
-    public Usuario(Integer userId, String name, String email, String password, LocalDateTime registrationDate) {
+    public Usuario(Integer userId, String name, String email, String password) {
         this.userId = userId;
         this.name = name;
         this.email = email;
         this.password = password;
-        this.registrationDate = registrationDate;
+        this.registrationDate = LocalDateTime.now();;
+    }
+    
+    public Usuario( String name, String email, String password) {
+        this.name = name;
+        this.email = email;
+        this.password = password;
+        this.registrationDate = LocalDateTime.now();
     }
 
     // Getters y Setters

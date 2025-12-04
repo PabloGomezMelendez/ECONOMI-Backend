@@ -3,6 +3,8 @@ package com.economi.servicio;
 import java.time.LocalDateTime;
 import java.util.Optional;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import com.economi.modelo.Usuario;
@@ -10,7 +12,7 @@ import com.economi.repositorio.UsuarioRepository;
 
 @Service
 public class UsuarioService {
-
+	private static final Logger logger = LoggerFactory.getLogger(UsuarioService.class);
     private final UsuarioRepository usuarioRepository;
 
     public UsuarioService(UsuarioRepository usuarioRepository) {
@@ -20,6 +22,7 @@ public class UsuarioService {
     // Crear usuario
     public Usuario crearUsuario(Usuario usuario) {
         usuario.setRegistrationDate(LocalDateTime.now());
+        logger.error("Llega "+ usuario.toString());
         return usuarioRepository.save(usuario);
     }
 

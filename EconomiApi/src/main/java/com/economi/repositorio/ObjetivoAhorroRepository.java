@@ -1,9 +1,12 @@
 
 package com.economi.repositorio;
 
-import com.economi.modelo.ObjetivoAhorro;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
+import com.economi.modelo.ObjetivoAhorro;
+
+@Repository
 public interface ObjetivoAhorroRepository extends CrudRepository<ObjetivoAhorro, Integer> {
     // Buscar objetivos por usuario
     Iterable<ObjetivoAhorro> findByUserId(Integer userId);

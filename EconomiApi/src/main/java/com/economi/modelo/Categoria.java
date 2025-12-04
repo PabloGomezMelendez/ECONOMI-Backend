@@ -30,6 +30,13 @@ public class Categoria {
         this.tipo = tipo;
         this.descripcion = descripcion;
     }
+    
+    public Categoria( String nombre, String tipo, String descripcion) {
+        this.nombre = nombre;
+        this.tipo = tipo;
+        this.descripcion = descripcion;
+    }
+
 
     // Getters y Setters
     public Integer getIdCategoria() {

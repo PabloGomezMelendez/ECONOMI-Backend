@@ -18,7 +18,6 @@ import com.economi.servicio.UsuarioService;
 
 @RestController
 @RequestMapping("/api/usuarios")
-
 public class UsuarioController {
 
     private final UsuarioService usuarioService;
